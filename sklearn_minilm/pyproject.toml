@@ -1,0 +1,23 @@
+[project]
+name = "skai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.2.1",
+    "datasets>=3.6.0",
+    "onnxruntime>=1.22.0",
+    "pandas>=2.3.1",
+    "scikit-learn>=1.6.1",
+    "skl2onnx>=1.18.0",
+    "transformers>=4.53.1",
+]
+
+[tool.uv.sources]
+skl2onnx = { git = "https://github.com/onnx/sklearn-onnx.git" }
+
+[dependency-groups]
+dev = [
+    "ipython>=9.2.0",
+]
